@@ -1,18 +1,20 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>DeskMole — Company-in-a-Device</title>
-<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:2rem}</style>
-<p>Loading DeskMole…</p>
-<script>
-(async () => {
-  const src = "https://gist.githubusercontent.com/ThirDecade2020/2963f1575794a9f34818cae21947251d/raw/current_url.txt";
-  try {
-    const res = await fetch(src, { cache: "no-store" });
-    const u = (await res.text()).trim();
-    if (/^https:\/\//.test(u)) { location.replace(u); }
-    else { document.body.innerHTML = "<p>Live link unavailable.</p>"; }
-  } catch (_) {
-    document.body.innerHTML = "<p>Live link unavailable.</p>";
-  }
-})();
-</script>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Company-in-a-Device — DeskMole</title>
+<style>
+:root{color-scheme:dark light}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;margin:0;display:grid;min-height:100vh;place-items:center;background:#0b1220;color:#e5e7eb}
+.card{max-width:720px;padding:28px 24px;border:1px solid #1f2937;border-radius:16px;background:linear-gradient(180deg,#0f172a 0%,#0b1220 100%)}
+h1{margin:0 0 8px;font-size:28px}
+p{margin:0 0 14px;color:#94a3b8}
+a.btn{display:inline-block;margin-top:10px;padding:12px 16px;border-radius:12px;text-decoration:none;color:#0b1220;background:#a5b4fc;font-weight:600}
+.small{font-size:12px;color:#64748b;margin-top:10px}
+</style>
+</head><body>
+  <div class="card">
+    <h1>DeskMole — Live Demo</h1>
+    <p>Hosted from my laptop via <strong>Company-in-a-Device</strong>. Click to play the 30-second clicker and hit the local leaderboard.</p>
+    <a class="btn" href="https://val-boc-examine-quantitative.trycloudflare.com" rel="noopener">Play DeskMole</a>
+    <div class="small">If link changes, I restarted the tunnel—check back in a moment.</div>
+  </div>
+</body></html>
