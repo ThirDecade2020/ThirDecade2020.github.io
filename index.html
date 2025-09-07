@@ -1,7 +1,18 @@
 <!doctype html>
 <meta charset="utf-8">
 <title>DeskMole — Company-in-a-Device</title>
-<link rel="canonical" href="https://finishing-babe-niger-surgeons.trycloudflare.com">
-<meta http-equiv="refresh" content="0; url=https://finishing-babe-niger-surgeons.trycloudflare.com">
-<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:2rem}a{font-weight:600}</style>
-<p>Redirecting to <a href="https://finishing-babe-niger-surgeons.trycloudflare.com">DeskMole</a>…</p>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:2rem}</style>
+<p>Loading DeskMole…</p>
+<script>
+(async () => {
+  const src = "https://gist.githubusercontent.com/ThirDecade2020/2963f1575794a9f34818cae21947251d/raw/current_url.txt";
+  try {
+    const res = await fetch(src, { cache: "no-store" });
+    const u = (await res.text()).trim();
+    if (/^https:\/\//.test(u)) { location.replace(u); }
+    else { document.body.innerHTML = "<p>Live link unavailable.</p>"; }
+  } catch (_) {
+    document.body.innerHTML = "<p>Live link unavailable.</p>";
+  }
+})();
+</script>
